@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eventos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="staticfiles/images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/css/util.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/css/main.css">
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-light justify-content-between">
+      <a class="navbar-brand" href="#">
+          <img src="https://opolen.com.br/Content/assets/img/sua-logo-aqui.png" width="80" height="80" class="d-inline-block align-center" alt="">
+                <b class="ml-3">Nome do Teatro</b>
+      </a>
+    <a class="btn btn-danger pull-right" href="login.html" data-url="">Sair</a>
+</nav>
+
+<div class="limiter">
+    <div class="container">
+        <div class="wrap p-l-55 p-r-55 p-t-65 p-b-90">
+            <div class="pb-5" >
+                <span class="badge badge-info">CADASTRO DE USUÁRIOS</span>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="razao_social">Nome Completo</label>
+                    <input type="email" class="form-control" id="razao_social" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="cnpj">CPF</label>
+                    <input type="number" class="form-control" id="cnpj" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="nome_fantasia">E-mail</label>
+                    <input type="text" class="form-control" id="nome_fantasia" aria-describedby="nome_helper" placeholder="">
+                    <small id="nome_helper" class="form-text text-muted">Este nome será exibido nas suas publicações.</small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Celular</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="email_helper" placeholder="">
+                    <small id="email_helper" class="form-text text-muted">Este e-mail será utilizado no login.</small>
+                </div>
+
+<!--Permissão de acesso-->
+
+                <div class="form-check form-check-inline col-md-4">
+                    <label class="form-check-label" for="inlineRadio1">Permissão de acesso: </label>
+                </div>
+                <div class="form-check form-check-inline col-md-2">
+                    <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="0">
+                    <label class="form-check-label" for="inlineRadio1">Admistração</label>
+                </div>
+                <div class="form-check form-check-inline col-md-2">
+                    <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">Financeiro</label>
+                </div>
+                <div class="form-check form-check-inline col-md-2">
+                    <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">Cadastro</label>
+                </div>
+
+                <div class="my-5">
+                    <div class="">
+                        <a class="btn btn-light float-left mb-5" href="cadastro_usuario.html" data-url="">Cancelar</a>
+                    <a class="btn btn-info float-right mb-5" href="cadastro_usuario.html" data-url="">Confirmar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="staticfiles/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="staticfiles/vendor/animsition/js/animsition.min.js"></script>
+<script src="staticfiles/vendor/bootstrap/js/popper.js"></script>
+<script src="staticfiles/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="staticfiles/vendor/select2/select2.min.js"></script>
+<script src="staticfiles/vendor/daterangepicker/moment.min.js"></script>
+<script src="staticfiles/vendor/daterangepicker/daterangepicker.js"></script>
+<script src="staticfiles/vendor/countdowntime/countdowntime.js"></script>
+<script src="staticfiles/js/main.js"></script>
+
+</body>
+</html>

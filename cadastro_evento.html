@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eventos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="staticfiles/images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/css/util.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/css/main.css">
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-light justify-content-between">
+      <a class="navbar-brand" href="#">
+          <img src="https://opolen.com.br/Content/assets/img/sua-logo-aqui.png" width="80" height="80" class="d-inline-block align-center" alt="">
+                <b class="ml-3">Nome do Teatro</b>
+      </a>
+    <a class="btn btn-danger pull-right" href="login.html" data-url="">Sair</a>
+</nav>
+
+<div class="limiter">
+    <div class="container">
+        <div class="wrap p-l-55 p-r-55 p-t-65 p-b-90">
+            <div class="pb-5" >
+                <span class="badge badge-info">CADASTRO DE EVENTO E ATRAÇÃO</span>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="titulo_evento">Título da Evento</label>
+                    <input type="text" class="form-control" id="titulo_evento" placeholder="">
+                </div>
+                <div class="form-group mb-3">
+                    <div class="input-group-append">
+                    <label class="input-group-text" for="select_evento">Tipo de Evento</label>
+                </div>
+                    <select class="custom-select col-md-12" id="select_evento">
+                        <option selected>Teatro</option>
+                        <option value="1">Show</option>
+                        <option value="2">Apresentação</option>
+                        <option value="3">Alimentação</option>
+                    </select>
+                </div>
+
+<!--PAGAMENTO-->
+
+                <div class="bg-light rounded box-shadow p-3 form-group">
+                <h2 class="h6">Tipos de Entradas - Valores</h2>
+                    <nav class="nav btn-group mb-3" id="pagamento" role="tablist"></nav>
+                    <div class="tab-content" id="formaPagamentoConteudo">
+<!--Painel já preparado para mostrar/ocultar-->
+                        <div class="tab-pane fade show active" id="nav-cartao" role="tabpanel" aria-labelledby="nav-cartao-tab">
+                            <div class="form-row">
+                                <div class="form-inline">
+                                    <div class="form-group mb-2">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                    <div class="form-group mx-sm-3 mb-2">
+                                        <div class="img-fluid pl-3" style="width: 100px;">Inteira</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pagamento_inteira" placeholder="R$">
+                                </div>
+                            </div>
+                            <div class="form-row mt-2">
+                                <div class="form-inline">
+                                    <div class="form-group mb-2">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                    <div class="form-group mx-sm-3 mb-2">
+                                        <div class="img-fluid pl-3" style="width: 100px;">Meia</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pagamento_meia" placeholder="R$">
+                                </div>
+                            </div>
+                            <div class="form-row mt-2">
+                                <div class="form-inline">
+                                    <div class="form-group mb-2">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                    <div class="form-group mx-sm-3 mb-2">
+                                        <div class="img-fluid pl-3" style="width: 100px;">Convênio</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pagamento_convenio" placeholder="R$">
+                                </div>
+                            </div>
+                            <div class="form-row mt-2">
+                                <div class="form-inline">
+                                    <div class="form-group mb-2">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                    <div class="form-group mx-sm-3 mb-2">
+                                        <div class="img-fluid pl-3" style="width: 100px;">Outros</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="pagamento_diferenciado" placeholder="R$"></input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--FIM PAGAMENTO-->
+
+                <div class="form-group mb-3">
+                    <div class="input-group-append">
+                    <label class="input-group-text" for="select_evento">Salas Disponíveis</label>
+                </div>
+                    <select class="custom-select col-md-12" id="select_evento">
+                        <option selected>1</option>
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                    </select>
+                </div>
+
+<!--SALAS-->
+
+                <div class="bg-light rounded box-shadow p-3 form-group">
+                    <h2 class="h6">Sala 1</h2>
+                    <div class="tab-content" id="sala_evento">
+                        <div class="tab-pane fade show active" id="nav-cartao" role="tabpanel" aria-labelledby="nav-cartao-tab">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nome_sala">Nome da Sala</label>
+                                    <input type="text" class="form-control" id="nome_sala" placeholder="Digite o nome da Sala">
+                                </div>
+                                <div class="form-group col-md-2 col-6">
+                                    <label for="capacidade_sala">Capacidade</label>
+                                    <input type="text" class="form-control" id="capacidade_sala" placeholder="Nº de assentos">
+                                </div>
+                                <div class="form-group col-md-2 col-6">
+                                    <label for="numeracao_cadeiras">Assentos c/ nº</label>
+                                    <select id="numeracao_cadeiras" class="form-control">
+                                        <option>Não</option>
+                                        <option>Sim</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2 col-6">
+                                    <label for="svg">Arquivo SVG</label>
+                                    <select id="svg" class="form-control">
+                                        <option>SVG A</option>
+                                        <option>SVG B</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nome_sala">Nome da Atração</label>
+                                    <input type="text" class="form-control" id="nome_sala" placeholder="Digite o nome da Atração">
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="capacidade_sala">Data</label>
+                                    <input type="date" class="form-control" id="capacidade_sala" placeholder="Nº de assentos">
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="numeracao_cadeiras">Horário</label>
+                                    <input type="time" class="form-control" id="capacidade_sala" placeholder="Nº de assentos">
+                                </div>
+                                <button type="submit" class="btn btn-info float-right mb-2" disabled>Adicionar Horário</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-light rounded box-shadow p-3 form-group">
+                    <h2 class="h6">Sala 2</h2>
+                    <div class="tab-content" id="sala_evento">
+                        <div class="tab-pane fade show active" id="nav-cartao" role="tabpanel" aria-labelledby="nav-cartao-tab">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nome_sala">Nome da Sala</label>
+                                    <input type="text" class="form-control" id="nome_sala" placeholder="Digite o nome da Sala">
+                                </div>
+                                <div class="form-group col-md-2 col-6">
+                                    <label for="capacidade_sala">Capacidade</label>
+                                    <input type="text" class="form-control" id="capacidade_sala" placeholder="Nº de assentos">
+                                </div>
+                                <div class="form-group col-md-2 col-6">
+                                    <label for="numeracao_cadeiras">Assentos c/ nº</label>
+                                    <select id="numeracao_cadeiras" class="form-control">
+                                        <option>Não</option>
+                                        <option>Sim</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2 col-6">
+                                    <label for="svg">Arquivo SVG</label>
+                                    <select id="svg" class="form-control">
+                                        <option>SVG A</option>
+                                        <option>SVG B</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nome_sala">Nome da Atração</label>
+                                    <input type="text" class="form-control" id="nome_sala" placeholder="Digite o nome da Atração">
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="capacidade_sala">Data</label>
+                                    <input type="date" class="form-control" id="capacidade_sala" placeholder="Nº de assentos">
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="numeracao_cadeiras">Horário</label>
+                                    <input type="time" class="form-control" id="capacidade_sala" placeholder="Nº de assentos">
+                                </div>
+                                <button type="submit" class="btn btn-info float-right mb-2" disabled>Adicionar Horário</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-light rounded box-shadow p-3 form-group">
+                    <h2 class="h6">Sala 3</h2>
+                    <div class="tab-content" id="sala_evento">
+                        <div class="tab-pane fade show active" id="nav-cartao" role="tabpanel" aria-labelledby="nav-cartao-tab">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nome_sala">Nome da Sala</label>
+                                    <input type="text" class="form-control" id="nome_sala" placeholder="Digite o nome da Sala">
+                                </div>
+                                <div class="form-group col-md-2 col-6">
+                                    <label for="capacidade_sala">Capacidade</label>
+                                    <input type="text" class="form-control" id="capacidade_sala" placeholder="Nº de assentos">
+                                </div>
+                                <div class="form-group col-md-2 col-6">
+                                    <label for="numeracao_cadeiras">Assentos c/ nº</label>
+                                    <select id="numeracao_cadeiras" class="form-control">
+                                        <option>Não</option>
+                                        <option>Sim</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2 col-6">
+                                    <label for="svg">Arquivo SVG</label>
+                                    <select id="svg" class="form-control">
+                                        <option>SVG A</option>
+                                        <option>SVG B</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nome_sala">Nome da Atração</label>
+                                    <input type="text" class="form-control" id="nome_sala" placeholder="Digite o nome da Atração">
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="capacidade_sala">Data</label>
+                                    <input type="date" class="form-control" id="capacidade_sala" placeholder="Nº de assentos">
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="numeracao_cadeiras">Horário</label>
+                                    <input type="time" class="form-control" id="capacidade_sala" placeholder="Nº de assentos">
+                                </div>
+                                <button type="submit" class="btn btn-info float-right mb-2" disabled>Adicionar Horário</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--FIM SALAS-->
+
+                <div class="form-group">
+                    <label for="email">Imagem - Banner do Evento</label>
+                    <input type="file" class="form-control" id="email" aria-describedby="email_helper" placeholder="">
+                </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Descritivo</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                  </div>
+
+                <div class="">
+                    <a class="btn btn-light float-left mb-5" href="cadastro_evento.html" data-url="">Cancelar</a>
+                    <a class="btn btn-info float-right mb-5" href="cadastro_usuario.html" data-url="">Confirmar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="staticfiles/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="staticfiles/vendor/animsition/js/animsition.min.js"></script>
+<script src="staticfiles/vendor/bootstrap/js/popper.js"></script>
+<script src="staticfiles/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="staticfiles/vendor/select2/select2.min.js"></script>
+<script src="staticfiles/vendor/daterangepicker/moment.min.js"></script>
+<script src="staticfiles/vendor/daterangepicker/daterangepicker.js"></script>
+<script src="staticfiles/vendor/countdowntime/countdowntime.js"></script>
+<script src="staticfiles/js/main.js"></script>
+
+</body>
+</html>

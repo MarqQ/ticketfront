@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eventos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="staticfiles/images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/css/util.css">
+    <link rel="stylesheet" type="text/css" href="staticfiles/css/main.css">
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-light justify-content-between">
+      <a class="navbar-brand" href="#">
+          <img src="https://opolen.com.br/Content/assets/img/sua-logo-aqui.png" width="80" height="80" class="d-inline-block align-center" alt="">
+                <b class="ml-3">Nome do Teatro</b>
+      </a>
+    <a class="btn btn-danger pull-right" href="login.html" data-url="">Sair</a>
+</nav>
+
+<div class="limiter">
+    <div class="container">
+        <div class="wrap p-l-55 p-r-55 p-t-65 p-b-90">
+            <div class="pb-5" >
+                <span class="badge badge-info">CADASTRO DO TEATRO</span>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="razao_social">Razão Social</label>
+                    <input type="email" class="form-control" id="razao_social" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="number" class="form-control" id="cnpj" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="nome_fantasia">Nome Fantasia</label>
+                    <input type="text" class="form-control" id="nome_fantasia" aria-describedby="nome_helper" placeholder="">
+                    <small id="nome_helper" class="form-text text-muted">Este nome será exibido nas suas publicações.</small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Logotipo do Teatro</label>
+                    <input type="file" class="form-control" id="email" aria-describedby="email_helper" placeholder="">
+                    <small id="email_helper" class="form-text text-muted">Esta logotipo será exibida no cabeçalho da página e divulgação de eventos.</small>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço Completo</label>
+                    <input type="text" class="form-control" id="endereco" placeholder="">
+                </div>
+
+<!--Complemento-->
+
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="complementop">Complemento</label>
+                        <input type="text" class="form-control" id="complementop" placeholder="ex: conjunto 10">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" class="form-control" id="cidade">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="estado">Estado</label>
+                        <input type="text" class="form-control" id="estado">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="telefone">Telefone</label>
+                        <input type="number" class="form-control" id="telefone">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="celular">Celular</label>
+                        <input type="number" class="form-control" id="celular">
+                    </div>
+                </div>
+
+<!--Fim Complemento-->
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="email_helper" placeholder="">
+                    <small id="email_helper" class="form-text text-muted">Este e-mail será utilizado no login.</small>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" id="senha" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="confirma_senha">Confirme sua senha</label>
+                    <input type="password" class="form-control" id="confirma_senha" placeholder="">
+                </div>
+                <div class="">
+                    <a class="btn btn-light float-left mb-5" href="cadastro_teatro.html" data-url="">Cancelar</a>
+                    <a class="btn btn-info float-right mb-5" href="login.html" data-url="">Confirmar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="staticfiles/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="staticfiles/vendor/animsition/js/animsition.min.js"></script>
+<script src="staticfiles/vendor/bootstrap/js/popper.js"></script>
+<script src="staticfiles/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="staticfiles/vendor/select2/select2.min.js"></script>
+<script src="staticfiles/vendor/daterangepicker/moment.min.js"></script>
+<script src="staticfiles/vendor/daterangepicker/daterangepicker.js"></script>
+<script src="staticfiles/vendor/countdowntime/countdowntime.js"></script>
+<script src="staticfiles/js/main.js"></script>
+
+</body>
+</html>
